@@ -1,29 +1,32 @@
-Thank you for taking my audit. 
+# Ascii-Art Generator
 
-To test the code, you can run manually everything or use unit test code I prepared for some cases:
+Simple Go program to generate ascii-art from the input text.
 
-TO RUN MANUALLY:
+## Used Technologies
 
-```
-go run . "string"
-```
+- Go (libraries below):
+    - fmt
+	- os
+	- strings
+	- testing
 
-TO RUN UNIT TEST: 
+## Installation & How to Use
 
-```
-go test
-```
+1. Clone repository
+2. Run `ascii-art.go` with the string you want to convert to ascii-art.
 
-NB1: I found that sometimes the test gives the output looks wrong but just run the test several times may resolve the problem. I don't know why. (Let me know if you have any clue!)
+    Ex:
+    ```
+    go run ascii-art.go "hello There 1 to 2!"
+     _              _   _                 _______   _                                            _                           _  
+    | |            | | | |               |__   __| | |                                 _        | |                  ____   | | 
+    | |__     ___  | | | |   ___            | |    | |__     ___   _ __    ___        / |       | |_    ___         |___ \  | | 
+    |  _ \   / _ \ | | | |  / _ \           | |    |  _ \   / _ \ | '__|  / _ \       | |       | __|  / _ \          __) | | | 
+    | | | | |  __/ | | | | | (_) |          | |    | | | | |  __/ | |    |  __/       | |       \ |_  | (_) |        / __/  |_| 
+    |_| |_|  \___| |_| |_|  \___/           |_|    |_| |_|  \___| |_|     \___|       |_|        \__|  \___/        |_____| (_) 
+    ```
+    If the art looks broken, make sure your terminal width has enough space to print the art.
 
-NB2: This unit test includes most of the provided audit cases (you can check them in ascii-art_test.go) but a few cannot be placed in it. So you have to additionally run the following ones to test everything:
+## Spec Detail
 
-```
-go run . 'hello There 1 to 2!'
-go run . "[\]^_ 'a"
-go run . '\!" #$%&'"'"'()*+,-./'
-```
-
-At last, don't forget to test the random cases. 
-
-Any feedbacks and comments are welcome!
+This program convert and print the input string into letter ascii-art formatted in the `standard.txt`.
