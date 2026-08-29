@@ -2,6 +2,8 @@
 
 Simple Go program to generate ascii-art from the input text.
 
+This app was created according to the requirements of kood/Jõhvi: https://github.com/01-edu/public/tree/master/subjects/ascii-art
+
 ## Used Technologies
 
 - Go (libraries below):
